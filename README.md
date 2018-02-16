@@ -8,3 +8,16 @@ The preferred way to install this extension is through composer.
 ```
 composer require --prefer-dist soless/yii2-jquery-tageditor-widget "*"
 ```
+
+usage:
+```php
+  <?php echo $form->field($model, 'selectedCategories')->widget('soless\tageditor\TagEditorWidget', [
+	'availableTags' => \common\models\Category::listAll(),
+        'tagEditorOptions' => [
+            'forceLowercase' => false,
+            'autocomplete' => [
+                'source' => Url::toRoute(['/sex/suggest'])
+            ],
+        ]
+    ]) ?>
+ ```
