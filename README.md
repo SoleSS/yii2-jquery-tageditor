@@ -11,7 +11,7 @@ composer require --prefer-dist soless/yii2-jquery-tageditor-widget "*"
 
 usage:
 ```php
-  <?php echo $form->field($model, 'selectedCategories')->widget('soless\tageditor\TagEditorWidget', [
+  <?php echo $form->field($model, 'selectedTags')->widget('soless\tageditor\TagEditorWidget', [
 	'availableTags' => ['firstTag', 'secondTag', 'thirdTag', ],
         'tagEditorOptions' => [
             'forceLowercase' => false,
@@ -29,7 +29,7 @@ usage:
 	Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
 
         return \yii\helpers\ArrayHelper::getColumn(
-	    \common\models\Age::find()
+	    \common\models\Tag::find()
 	    ->select('title')
 	    ->filterWhere(['like', 'title', $term.'%', false])
 	    ->all(), 
