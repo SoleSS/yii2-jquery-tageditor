@@ -20,7 +20,7 @@
 
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "bower-asset/jquery-tag-editor": ">=1.0.21"
+        "bower-asset/jquery-tag-editor": "*"
     },
 
     "autoload": {

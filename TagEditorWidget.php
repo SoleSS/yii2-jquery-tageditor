@@ -9,6 +9,7 @@ use yii\helpers\Html;
 class TagEditorWidget extends InputWidget {
     public $htmlOptions = [];
     public $tagEditorOptions = [];
+    public $availableTags = [];
     
     
 
@@ -26,6 +27,7 @@ class TagEditorWidget extends InputWidget {
 		  'attribute' => $this->attribute, 
 		  'htmlOptions' => $this->htmlOptions, 
 		  'tagEditorOptions' => json_encode($this->tagEditorOptions), 
+		  'availableTags' => $availableTags,
 		  'id' => $this->getId(), 
 	]);
     }
