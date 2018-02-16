@@ -1,4 +1,4 @@
-# Yii2 jQuery TagEditory
+# Yii2 jQuery TagEditor
 
 Widget for tags adding. Based on https://goodies.pixabay.com/jquery/tag-editor/demo.html
 
