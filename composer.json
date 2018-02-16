@@ -1,0 +1,31 @@
+{
+    "name": "soless/yii2-jquery-tageditor-widget",
+
+    "type": "yii2-extension",
+
+    "description": "Widget for a powerful and lightweight tag editor plugin for jQuery with available tags select buttons",
+    "keywords": ["yii2", "jquery", "tageditor", "helper", "active form"],
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/SoleSS/yii2-jquery-tageditor-widget/issues",
+        "wiki": "https://github.com/SoleSS/yii2-jquery-tageditor-widget/wiki",
+        "source": "https://github.com/SoleSS/yii2-jquery-tageditor-widget"
+    },
+    "authors": [
+        {
+            "name": "Michael Nordheimer",
+            "email": "soless@info-tech.pro"
+        }
+    ],
+
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "bower-asset/jquery-tag-editor": ">=1.0.21"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "soless\\tageditor\\": ""
+        }
+    }
+}
