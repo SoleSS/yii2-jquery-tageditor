@@ -14,7 +14,7 @@ $this->registerJs(
 	<?php if (!empty($availableTags)) : ?>
 	  <div class="available-tags-wrap">
 	    <?php foreach ($availableTags as $tag) : ?>
-	      <a href="/nojs.html" class="btn btn-sm btn-info"><?= $tag ?></a>
+	      <a href="/nojs.html" onclick="return false;" class="btn btn-sm btn-info"><?= $tag ?></a>
 	    <?php endforeach; ?>
 	  </div>
 	<?php endif; ?>
