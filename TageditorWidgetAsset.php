@@ -12,9 +12,6 @@ class TageditorWidgetAsset extends AssetBundle
     public $js = [
 	'assets/js/init.js',
     ];
-    public $publishOptions = [
-
-    ];
     public $depends = [
         'soless\tageditor\TageditorAsset',
         'yii\bootstrap\BootstrapAsset',
