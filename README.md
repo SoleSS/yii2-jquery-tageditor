@@ -21,3 +21,19 @@ usage:
         ]
     ]) ?>
  ```
+ 
+
+ app\controllers\TagController (suggest action example) :
+  ```php
+     public function actionSuggest($term) {
+	Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
+        return \yii\helpers\ArrayHelper::getColumn(
+	    \common\models\Age::find()
+	    ->select('title')
+	    ->filterWhere(['like', 'title', $term.'%', false])
+	    ->all(), 
+	    'title'
+	);
+    }
+ ```
