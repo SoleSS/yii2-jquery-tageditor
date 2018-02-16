@@ -12,7 +12,7 @@ composer require --prefer-dist soless/yii2-jquery-tageditor-widget "*"
 usage:
 ```php
   <?php echo $form->field($model, 'selectedCategories')->widget('soless\tageditor\TagEditorWidget', [
-	'availableTags' => \common\models\Category::listAll(),
+	'availableTags' => ['firstTag', 'secondTag', 'thirdTag', ],
         'tagEditorOptions' => [
             'forceLowercase' => false,
             'autocomplete' => [
