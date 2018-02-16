@@ -16,7 +16,7 @@ usage:
         'tagEditorOptions' => [
             'forceLowercase' => false,
             'autocomplete' => [
-                'source' => Url::toRoute(['/sex/suggest'])
+                'source' => \yii\helpers\Url::toRoute(['/tag/suggest'])
             ],
         ]
     ]) ?>
