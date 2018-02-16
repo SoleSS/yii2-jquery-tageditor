@@ -27,7 +27,7 @@ class TagEditorWidget extends InputWidget {
 		  'attribute' => $this->attribute, 
 		  'htmlOptions' => $this->htmlOptions, 
 		  'tagEditorOptions' => json_encode($this->tagEditorOptions), 
-		  'availableTags' => $availableTags,
+		  'availableTags' => $this->availableTags,
 		  'id' => $this->getId(), 
 	]);
     }
